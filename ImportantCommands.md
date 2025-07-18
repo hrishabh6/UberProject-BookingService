@@ -12,3 +12,20 @@ sudo service redis-server start
 ```
 sudo service redis-server status
 ```
+
+## Commands to run kafka
+- Run the Zookeper first
+```
+cd \Kafka\kafka_2.12-3.9.1
+```
+```
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+```
+
+- Then run kafka in another terminal
+```aiignore
+cd \Kafka\kafka_2.12-3.9.1
+```
+```
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+```
